@@ -1,0 +1,176 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://distill.pub/template.v2.js"></script>
+    <style>
+        <%=require("raw-loader!../static/style.css") %>
+    </style>
+</head>
+
+<body>
+
+    <d-front-matter>
+        <script type="text/json">{
+  "title": "",
+  "description": "",
+  "authors": [
+
+  ],
+  "katex": {
+    "delimiters": [
+      {
+        "left": "$",
+        "right": "$",
+        "display": false
+      },
+      {
+        "left": "$$",
+        "right": "$$",
+        "display": true
+      }
+    ]
+  }
+  }</script>
+    </d-front-matter>
+
+    <d-title>
+        <h1>A Discussion of<br> <em>Adversarial Examples Are Not
+                Bugs, They Are
+                Features</em></h1>
+        <!--<p>Ilya et al.'s paper was received with much interest by the research community.
+            In an experimental attempt to advance the scientific
+            dialogue,
+            Distill is publishing a collection of commentary articles and clarifications developed in collaboration with
+            the original paper's authors. </p>-->
+    </d-title>
+
+    <style>
+        .authors-affiliations {
+            display: none;
+        }
+    </style>
+
+    <d-article>
+
+        <p>
+            Complex structures in nature form in a way that’s drastically different from those human’s create.
+            Global order emerges from local interactions between tiny constituent particles -- a process called self-organization.
+            These self-organizing systems can be remarkably flexible and robust.
+            As a result, there’s been significant research interest in engineering self-organizing systems, but it remains an open research topic.
+        </p>
+
+
+        <p>
+            Differentiable programming seems like it could be a natural fit for this challenge.
+            If backpropagation can optimize through many non-linear neural network layers,
+            why shouldn’t it be able to optimize the local rules of a self-organizing system?
+            Recently, there has been growing interest in this possible intersection …
+            [TODO: ask Alex / Jeff CLune to help me understand prior work in this area better]
+        </p>
+
+
+
+        <h2>Articles & Comments</h2>
+
+        <p>
+          Distill has invited several researchers to publish a “thread” of short articles exploring differentiable self-organizing systems,
+          interspersed with critical commentary from several experts in adjacent fields.
+          The thread will be a living document, with new articles added over time.
+          Distill believes that reconciling faster and more continuous approaches to publication with rigorous review is an important open problem in scientific publishing,
+          and we’re looking forward to seeing how this experiment goes.
+        </p>
+
+        <p>
+          Articles and comments are presented below in chronological order:
+        </p>
+
+
+        <div id="commentaries" class="articles">
+
+            <article id="response-1">
+                <div class=icon></div>
+                <header>
+                    <h3>
+                        <a href="response-1/">Growing Neural Cellular Automata</a>
+                    </h3>
+                    <div class="authors-affiliations grid">
+                        <h3>Authors</h3>
+                        <h3>Affiliations</h3>
+                        <p class="author">
+                            <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>
+                        </p>
+                        <p class="affiliation">
+                            <a class="affiliation" href="https://research.google/">Google</a>
+                        </p>
+                        <p class="author">
+                            <a class="name" href="">Ettore Randazzo</a>
+                        </p>
+                        <p class="affiliation">
+                            <a class="affiliation" href="https://research.google/">Google</a>
+                        </p>
+                        <p class="author">
+                            <a class="name" href="">Eyvind Niklasson</a>
+                        </p>
+                        <p class="affiliation">
+                            <a class="affiliation" href="https://research.google/">Google</a>
+                        </p>
+                        <p class="author">
+                            <a class="name" href="https://people.eecs.berkeley.edu/~hendrycks/">Michael Levin</a>
+                        </p>
+                        <p class="affiliation">
+                            <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>
+                        </p>
+                    </div>
+                </header>
+                <p class="summary">
+                    Lorem ipsum...
+                    <video loop="" autoplay="" playsinline="" muted="" style="width:70%; margin-right: 30%; margin-left: 0px;">
+                      <source src="https://drafts.distill.pub/growing-ca/figures/regen2.mp4" type="video/mp4">
+                        <!--TODO: change this -->
+                      Your browser does not support the video tag.
+                    </video>
+                    <a class="continue" href="response-1/">
+                        Read Full Article
+                    </a>
+                </p>
+            </article>
+          </div>
+
+            <div class="rebuttal">
+                <h4>This is a living document</h4>
+                <p>
+                    Distill is experimenting with a new "thread" format.
+                    Expect more articles on this topic, along with critical comments from experts.
+                </p>
+            </div>
+
+    </d-article>
+
+    <d-appendix>
+        <h3>Citation Information</h3>
+        <p>
+            If you wish to cite this discussion as a whole, citation information can be found below.
+            The author order is all participants in the conversation in alphabetical order.
+            You can also cite individual comments or the author responses using the citation information provided at the
+            bottom of the corresponding article.
+        </p>
+
+        <h3>Editorial Note</h3>
+        <p>
+            This discussion article is an experiment organized by Chris Olah and Ludwig Schubert.
+            Chris Olah facilitated and edited the comments and discussion process. Ludwig Schubert
+            assisted by assembling the responses into their current presentation.
+        </p>
+
+
+
+
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+    </d-appendix>
+
+    <d-bibliography src="bibliography.bib"></d-bibliography>
+
+</body>
