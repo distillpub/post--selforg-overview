@@ -37,12 +37,7 @@
 
     <d-title>
         <h1>Thread: <i>Differentiable Self-organizing Systems</i></h1>
-        <p>A living collection of articles and comments exploring an emerging research direction</p>
-        <!--<p>Ilya et al.'s paper was received with much interest by the research community.
-            In an experimental attempt to advance the scientific
-            dialogue,
-            Distill is publishing a collection of commentary articles and clarifications developed in collaboration with
-            the original paper's authors. </p>-->
+        <p>A living collection of articles and comments.</p>
     </d-title>
 
     <style>
@@ -53,22 +48,31 @@
 
     <d-article>
 
+
         <p>
+            Self-organisation is omnipresent on all scales of biological life 
+            - from the complex interactions between molecules to form structures such as proteins, 
+            to cell colonies interacting to achieve larger goals such as exploration, to animal cells self-organising into bodies, 
+            to humans forming collectives in society such as tribes, governments or countries. 
+            The old adage “the whole is greater than the sum of its parts”, often ascribed to Aristotle, rings true everywhere we look. 
+            We see emergent properties in many complex systems, even if these are governed by very simple rules or agents at heart 
+            - whether it’s flocking in birds or collective intelligence in humans. 
+        </p>
+
+
+        <p>
+            The articles in this thread investigate ways to elicit and steer similar emergent behaviour “on silicon” 
+            - with the goal of understanding how to design robust and general purpose selof-organizing systems.
+        </p>
+
+
+        <!--<p>
             Complex structures in nature form in a way that’s drastically different from those human’s create.
             Global order emerges from local interactions between tiny constituent particles -- a process called self-organization.
             These self-organizing systems can be remarkably flexible and robust.
             As a result, there’s been significant research interest in engineering self-organizing systems, but it remains an open research topic.
-        </p>
-
-
-        <p>
-            Differentiable programming seems like it could be a natural fit for this challenge.
-            If backpropagation can optimize through many non-linear neural network layers,
-            why shouldn’t it be able to optimize the local rules of a self-organizing system?
-            Recently, there has been growing interest in this possible intersection …
-            [TODO: ask Alex / Jeff CLune to help me understand prior work in this area better]
-        </p>
-
+        </p>-->       
+ 
 
 
         <h2>Articles & Comments</h2>
@@ -77,72 +81,128 @@
           Distill has invited several researchers to publish a “thread” of short articles exploring differentiable self-organizing systems,
           interspersed with critical commentary from several experts in adjacent fields.
           The thread will be a living document, with new articles added over time.
-          Distill believes that reconciling faster and more continuous approaches to publication with rigorous review is an important open problem in scientific publishing,
-          and we’re looking forward to seeing how this experiment goes.
-        </p>
-
-        <p>
           Articles and comments are presented below in chronological order:
         </p>
 
 
         <div id="commentaries" class="articles">
 
-            <article id="response-1">
+            <article id="article-1">
                 <div class=icon></div>
                 <header>
                     <h3>
-                        <a href="response-1/">Growing Neural Cellular Automata</a>
+                        <a href="https://distill.pub/2020/growing-ca/">Growing Neural Cellular Automata</a>
                     </h3>
                     <div class="authors-affiliations grid">
                         <h3>Authors</h3>
                         <h3>Affiliations</h3>
-                        <p class="author">
-                            <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>
-                        </p>
-                        <p class="affiliation">
-                            <a class="affiliation" href="https://research.google/">Google</a>
-                        </p>
-                        <p class="author">
-                            <a class="name" href="">Ettore Randazzo</a>
-                        </p>
-                        <p class="affiliation">
-                            <a class="affiliation" href="https://research.google/">Google</a>
-                        </p>
-                        <p class="author">
-                            <a class="name" href="">Eyvind Niklasson</a>
-                        </p>
-                        <p class="affiliation">
-                            <a class="affiliation" href="https://research.google/">Google</a>
-                        </p>
-                        <p class="author">
+                        <p class="author" style="line-height: 1.5; margin-top: 4px;">
+                            <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>, 
+                            <a class="name" href="">Ettore Randazzo</a>,
+                            <a class="name" href="">Eyvind Niklasson</a>,
                             <a class="name" href="https://people.eecs.berkeley.edu/~hendrycks/">Michael Levin</a>
                         </p>
-                        <p class="affiliation">
+                        <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
+                            <a class="affiliation" href="https://research.google/">Google</a>,
                             <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>
                         </p>
                     </div>
                 </header>
                 <p class="summary">
-                    Lorem ipsum...
-                    <video loop="" autoplay="" playsinline="" muted="" style="width:70%; margin-right: 30%; margin-left: 0px;">
-                      <source src="https://drafts.distill.pub/growing-ca/figures/regen2.mp4" type="video/mp4">
-                        <!--TODO: change this -->
-                      Your browser does not support the video tag.
-                    </video>
-                    <a class="continue" href="response-1/">
+                    This article investigates morphogenesis - 
+                    the process by which living creatures self-assemble their bodies. 
+                    It explores a simple, differentiable, model of morphogenesis inspired by cellular automata 
+                    and shows how such a model can learn a robust and persistent set of dynamics 
+                    to grow an arbitrary structure starting from a single cell. 
+                    <a class="continue" href="https://distill.pub/2020/growing-ca/">
                         Read Full Article
                     </a>
                 </p>
             </article>
+
+            <article id="article-2">
+                <div class=icon></div>
+                <header>
+                    <h3>
+                        <a href="">Self-classifying MNIST</a>
+                    </h3>
+                    <div class="authors-affiliations grid">
+                        <h3>Authors</h3>
+                        <h3>Affiliations</h3>
+                        <p class="author" style="line-height: 1.5; margin-top: 4px;"> 
+                            <a class="name" href="">Ettore Randazzo</a>,
+                            <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>,
+                            <a class="name" href="">Eyvind Niklasson</a>,
+                            <a class="name" href="https://people.eecs.berkeley.edu/~hendrycks/">Michael Levin</a>
+                        </p>
+                        <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
+                            <a class="affiliation" href="https://research.google/">Google</a>,
+                            <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>
+                        </p>
+                    </div>
+                </header>
+                <p class="summary">
+                    Building on the previous article, this article explores whether neural cellular automata can be used for a different goal:
+                      self-classification. 
+                     The authors make some tweaks to the original paradigm and show that a similar model can be used to have cells 
+                     self-classify the MNIST digit they form - with good generalization and exhibiting both spatial, temporal and scale invariance. 
+                    <a class="continue" href="">
+                        Read Full Article
+                    </a>
+                </p>
+            </article>
+
           </div>
 
-            <div class="rebuttal">
-                <h4>This is a living document</h4>
-                <p>
-                    Expect more articles on this topic, along with critical comments from experts.
-                </p>
-            </div>
+          <div class="info">
+            <h4>This is a living document</h4>
+            <p>
+              Expect more articles on this topic, along with critical comments from
+              experts.
+            </p>
+          </div>
+
+              
+        <h2>Get Involved</h2>
+    
+        <p>
+          The Self-Organizing systems thread is open to articles exploring differentiable self-organizing sytems. 
+          Critical
+          commentary and discussion of existing articles is also welcome. The thread
+          is organized through the open <code>#selforg</code> channel on the
+          <a href="http://slack.distill.pub">Distill slack</a>. Articles can be
+          suggested there, and will be included at the discretion of previous
+          authors in the thread, or in the case of disagreement by an uninvolved
+          editor.
+        </p>
+    
+        <p>
+          If you would like get involved but don't know where to start, small
+          projects may be available if you ask in the channel.
+        </p>
+    
+        <h2>About the Thread Format</h2>
+    
+        <p>
+          Part of Distill's mandate is to experiment with new forms of scientific
+          publishing. We believe that that reconciling faster and more continuous
+          approaches to publication with review and discussion is an important open
+          problem in scientific publishing.
+        </p>
+        <p>
+          Threads are collections of short articles, experiments, and critical
+          commentary around a narrow or unusual research topic, along with a slack
+          channel for real time discussion and collaboration. They are intended to
+          be earlier stage than a full Distill paper, and allow for more fluid
+          publishing, feedback and discussion. We also hope they'll allow for wider
+          participation. Think of a cross between a Twitter thread, an academic
+          workshop, and a book of collected essays.
+        </p>
+        <p>
+          Threads are very much an experiment. We think it's possible they're a
+          great format, and also possible they're terrible. We plan to trial two
+          such threads and then re-evaluate our thought on the format.
+        </p>
 
     </d-article>
 
