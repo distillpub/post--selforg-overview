@@ -244,7 +244,7 @@ article#rebuttal {
 
     <d-title>
         <h1>Thread: <i>Differentiable Self-organizing Systems</i></h1>
-        <p>A living collection of articles and comments.</p>
+        <p>How can we construct robust, general-purpose self-organising systems?</p>
     </d-title>
 
     <style>
@@ -257,29 +257,13 @@ article#rebuttal {
 
 
         <p>
-            Self-organisation is omnipresent on all scales of biological life 
-            - from the complex interactions between molecules to form structures such as proteins, 
-            to cell colonies interacting to achieve larger goals such as exploration, to animal cells self-organising into bodies, 
-            to humans forming collectives in society such as tribes, governments or countries. 
-            The old adage “the whole is greater than the sum of its parts”, often ascribed to Aristotle, rings true everywhere we look. 
-            We see emergent properties in many complex systems, even if these are governed by very simple rules or agents at heart 
-            - whether it’s flocking in birds or collective intelligence in humans. 
-        </p>
-
+        Self-organisation is omnipresent on all scales of biological life. From complex interactions between molecules forming structures such as proteins, to cell colonies achieving global goals like exploration by means of the individual cells collaborating and communicating, to humans forming collectives in society such as tribes, governments or countries. The old adage “the whole is greater than the sum of its parts”, often ascribed to Aristotle, rings true everywhere we look. 
+       </p>
 
         <p>
-            The articles in this thread investigate ways to elicit and steer similar emergent behaviour “on silicon” 
-            - with the goal of understanding how to design robust and general purpose self-organizing systems.
-        </p>
+The articles in this thread focus on practical ways of designing self-organizing systems. In particular we use Differentiable Programming (optimization) to learn agent-level policies that satisfy system-level objectives. The cross-disciplinary nature of this thread aims to facilitate ideas exchange between ML and developmental biology communities.
+       </p>
 
-
-        <!--<p>
-            Complex structures in nature form in a way that’s drastically different from those human’s create.
-            Global order emerges from local interactions between tiny constituent particles -- a process called self-organization.
-            These self-organizing systems can be remarkably flexible and robust.
-            As a result, there’s been significant research interest in engineering self-organizing systems, but it remains an open research topic.
-        </p>-->       
- 
 
 
         <h2>Articles & Comments</h2>
@@ -316,11 +300,7 @@ article#rebuttal {
                     </div>
                 </header>
                 <p class="summary">
-                    This article investigates morphogenesis - 
-                    the process by which living creatures self-assemble their bodies. 
-                    It explores a simple, differentiable, model of morphogenesis inspired by cellular automata 
-                    and shows how such a model can learn a robust and persistent set of dynamics 
-                    to grow an arbitrary structure starting from a single cell. 
+                Building their own bodies is the very first skill all living creatures possess. How can we design systems that grow themselves, maintain and repair themselves by regenerating damages? This work investigates morphogenesis, the process by which living creatures self-assemble their bodies. It proposes a simple, differentiable, Cellular Automata model of morphogenesis and shows how such a model learns a robust and persistent set of dynamics to grow any arbitrary structure starting from a single cell.
                     <a class="continue" href="/2020/growing-ca/">
                         Read Full Article
                     </a>
@@ -331,7 +311,7 @@ article#rebuttal {
                 <div class=icon></div>
                 <header>
                     <h3>
-                        <a href="/2020/selforg/mnist">Self-classifying MNIST</a>
+                        <a href="/2020/selforg/mnist">Self-classifying MNIST Digits</a>
                     </h3>
                     <div class="authors-affiliations grid">
                         <h3>Authors</h3>
@@ -351,10 +331,7 @@ article#rebuttal {
                     </div>
                 </header>
                 <p class="summary">
-                    Building on the previous article, this article explores whether neural cellular automata can be used for a different goal:
-                      self-classification. 
-                     The authors make some tweaks to the original paradigm and show that a similar model can be used to have cells 
-                     self-classify the MNIST digit they form - with good generalization and exhibiting both spatial, temporal and scale invariance. 
+                This work presents a follow up to Growing Neural CAs, using a similar computational model for the goal of digit “self-classification”. The authors show how neural CAs can self-classify the MNIST digit they form. The resulting CAs can be interacted with by dynamically changing the underlying digit. The CAs respond to perturbations with a learned self-correcting classification behaviour.
                     <a class="continue" href="/2020/selforg/mnist/">
                         Read Full Article
                     </a>
