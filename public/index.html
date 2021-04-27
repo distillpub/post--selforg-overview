@@ -1,11 +1,11 @@
 <!doctype html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//distill.pub/template.v2.js"></script>
-    <style>
-        .subgrid {
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//distill.pub/template.v2.js"></script>
+  <style>
+    .subgrid {
 	grid-column: screen;
 	display: grid;
 	grid-template-columns: inherit;
@@ -183,7 +183,7 @@ article#rebuttal {
 	color: #2e6db7;
 }
 
-    </style>
+  </style>
 </head>
 
 <body>
@@ -242,214 +242,233 @@ article#rebuttal {
     </script>
   </d-front-matter>
 
-    <d-title>
-        <h1>Thread: <i>Differentiable Self-organizing Systems</i></h1>
-        <p>How can we construct robust, general-purpose self-organising systems?</p>
-    </d-title>
+  <d-title>
+    <h1>Thread: <i>Differentiable Self-organizing Systems</i></h1>
+    <p>How can we construct robust, general-purpose self-organising systems?</p>
+  </d-title>
 
-    <style>
-        .authors-affiliations {
-            display: none;
-        }
-    </style>
+  <style>
+    .authors-affiliations {
+      display: none;
+    }
+  </style>
 
-    <d-article>
-
-
-        <p>
-        Self-organisation is omnipresent on all scales of biological life. From complex interactions between molecules forming structures such as proteins, to cell colonies achieving global goals like exploration by means of the individual cells collaborating and communicating, to humans forming collectives in society such as tribes, governments or countries. The old adage “the whole is greater than the sum of its parts”, often ascribed to Aristotle, rings true everywhere we look. 
-       </p>
-
-        <p>
-The articles in this thread focus on practical ways of designing self-organizing systems. In particular we use Differentiable Programming (optimization) to learn agent-level policies that satisfy system-level objectives. The cross-disciplinary nature of this thread aims to facilitate ideas exchange between ML and developmental biology communities.
-       </p>
+  <d-article>
 
 
+    <p>
+      Self-organisation is omnipresent on all scales of biological life. From complex interactions between molecules
+      forming structures such as proteins, to cell colonies achieving global goals like exploration by means of the
+      individual cells collaborating and communicating, to humans forming collectives in society such as tribes,
+      governments or countries. The old adage “the whole is greater than the sum of its parts”, often ascribed to
+      Aristotle, rings true everywhere we look.
+    </p>
 
-        <h2>Articles & Comments</h2>
-
-        <p>
-          Distill has invited several researchers to publish a “thread” of short articles exploring differentiable self-organizing systems,
-          interspersed with critical commentary from several experts in adjacent fields.
-          The thread will be a living document, with new articles added over time.
-          Articles and comments are presented below in chronological order:
-        </p>
-
-
-        <div id="commentaries" class="articles">
-
-            <article id="article-1">
-                <div class=icon></div>
-                <header>
-                    <h3>
-                        <a href="/2020/growing-ca/">Growing Neural Cellular Automata</a>
-                    </h3>
-                    <div class="authors-affiliations grid">
-                        <h3>Authors</h3>
-                        <h3>Affiliations</h3>
-                        <p class="author" style="line-height: 1.5; margin-top: 4px;">
-                            <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>, 
-                            <a class="name" href="">Ettore Randazzo</a>,
-                            <a class="name" href="https://eyvind.me/">Eyvind Niklasson</a>,
-                            <a class="name" href="http://www.drmichaellevin.org/">Michael Levin</a>
-                        </p>
-                        <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
-                            <a class="affiliation" href="https://research.google/">Google</a>,
-                            <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>
-                        </p>
-                    </div>
-                </header>
-                <p class="summary">
-                Building their own bodies is the very first skill all living creatures possess. How can we design systems that grow, maintain and repair themselves by regenerating damages? This work investigates morphogenesis, the process by which living creatures self-assemble their bodies. It proposes a  differentiable, Cellular Automata model of morphogenesis and shows how such a model learns a robust and persistent set of dynamics to grow any arbitrary structure starting from a single cell.
-                    <a class="continue" href="/2020/growing-ca/">
-                        Read Full Article
-                    </a>
-                </p>
-            </article>
-
-            <article id="article-2">
-                <div class=icon></div>
-                <header>
-                    <h3>
-                        <a href="/2020/selforg/mnist">Self-classifying MNIST Digits</a>
-                    </h3>
-                    <div class="authors-affiliations grid">
-                        <h3>Authors</h3>
-                        <h3>Affiliations</h3>
-                        <p class="author" style="line-height: 1.5; margin-top: 4px;"> 
-                            <a class="name" href="">Ettore Randazzo</a>,
-                            <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>,
-                            <a class="name" href="https://eyvind.me/">Eyvind Niklasson</a>,
-                            <a class="name" href="http://www.drmichaellevin.org/">Michael Levin</a>,
-                            <a class="name" href="https://greydanus.github.io/about.html">Sam Greydanus</a>
-                        </p>
-                        <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
-                            <a class="affiliation" href="https://research.google/">Google</a>,
-                            <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>,
-                            <a class="affiliation" href="http://mlcollective.org/">Oregon State University and the ML Collective</a>
-                        </p>
-                    </div>
-                </header>
-                <p class="summary">
-                This work presents a follow up to Growing Neural CAs, using a similar computational model for the goal of digit "self-classification". The authors show how neural CAs can self-classify the MNIST digit they form. The resulting CAs can be interacted with by dynamically changing the underlying digit. The CAs respond to perturbations with a learned self-correcting classification behaviour.
-                    <a class="continue" href="/2020/selforg/mnist/">
-                        Read Full Article
-                    </a>
-                </p>
-            </article>
+    <p>
+      The articles in this thread focus on practical ways of designing self-organizing systems. In particular we use
+      Differentiable Programming (optimization) to learn agent-level policies that satisfy system-level objectives. The
+      cross-disciplinary nature of this thread aims to facilitate ideas exchange between ML and developmental biology
+      communities.
+    </p>
 
 
-            <article id="article-3">
-                <div class=icon></div>
-                <header>
-                    <h3>
-                        <a href="/selforg/2021/textures">Self-Organising Textures</a>
-                    </h3>
-                    <div class="authors-affiliations grid">
-                        <h3>Authors</h3>
-                        <h3>Affiliations</h3>
-                        <p class="author" style="line-height: 1.5; margin-top: 4px;"> 
-                            <a class="name" href="https://eyvind.me/">Eyvind Niklasson</a>,
-                            <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>,
-                            <a class="name" href="">Ettore Randazzo</a>,
-                            <a class="name" href="http://www.drmichaellevin.org/">Michael Levin</a>
-                        </p>
-                        <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
-                            <a class="affiliation" href="https://research.google/">Google</a>,
-                            <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>,
-                        </p>
-                    </div>
-                </header>
-                <p class="summary">
-                Here the authors apply Neural Cellular Automata to a new domain: texture synthesis. They begin by training NCA to mimic a series of textures taken from template images. Then, taking inspiration from adversarial camouflages which appear in nature, they use NCA to create textures which maximally excite neurons in a pretrained vision model. These results reveal that a simple model combined with well-known objectives can lead to robust and unexpected behaviors.
-                    <a class="continue" href="/selforg/2021/textures/">
-                        Read Full Article
-                    </a>
-                </p>
-            </article>
 
-          </div>
+    <h2>Articles & Comments</h2>
 
-          <div class="info">
-            <h4>This is a living document</h4>
-            <p>
-              Expect more articles on this topic, along with critical comments from
-              experts.
+    <p>
+      Distill has invited several researchers to publish a “thread” of short articles exploring differentiable
+      self-organizing systems,
+      interspersed with critical commentary from several experts in adjacent fields.
+      The thread will be a living document, with new articles added over time.
+      Articles and comments are presented below in chronological order:
+    </p>
+
+
+    <div id="commentaries" class="articles">
+
+      <article id="article-1">
+        <div class=icon></div>
+        <header>
+          <h3>
+            <a href="/2020/growing-ca/">Growing Neural Cellular Automata</a>
+          </h3>
+          <div class="authors-affiliations grid">
+            <h3>Authors</h3>
+            <h3>Affiliations</h3>
+            <p class="author" style="line-height: 1.5; margin-top: 4px;">
+              <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>,
+              <a class="name" href="">Ettore Randazzo</a>,
+              <a class="name" href="https://eyvind.me/">Eyvind Niklasson</a>,
+              <a class="name" href="http://www.drmichaellevin.org/">Michael Levin</a>
+            </p>
+            <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
+              <a class="affiliation" href="https://research.google/">Google</a>,
+              <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>
             </p>
           </div>
+        </header>
+        <p class="summary">
+          Building their own bodies is the very first skill all living creatures possess. How can we design systems that
+          grow, maintain and repair themselves by regenerating damages? This work investigates morphogenesis, the
+          process by which living creatures self-assemble their bodies. It proposes a differentiable, Cellular Automata
+          model of morphogenesis and shows how such a model learns a robust and persistent set of dynamics to grow any
+          arbitrary structure starting from a single cell.
+          <a class="continue" href="/2020/growing-ca/">
+            Read Full Article
+          </a>
+        </p>
+      </article>
 
-              
-        <h2>Get Involved</h2>
-    
-        <p>
-          The Self-Organizing systems thread is open to articles exploring differentiable self-organizing sytems. 
-          Critical
-          commentary and discussion of existing articles is also welcome. The thread
-          is organized through the open <code>#selforg</code> channel on the
-          <a href="http://slack.distill.pub">Distill slack</a>. Articles can be
-          suggested there, and will be included at the discretion of previous
-          authors in the thread, or in the case of disagreement by an uninvolved
-          editor.
+      <article id="article-2">
+        <div class=icon></div>
+        <header>
+          <h3>
+            <a href="/2020/selforg/mnist/">Self-classifying MNIST Digits</a>
+          </h3>
+          <div class="authors-affiliations grid">
+            <h3>Authors</h3>
+            <h3>Affiliations</h3>
+            <p class="author" style="line-height: 1.5; margin-top: 4px;">
+              <a class="name" href="">Ettore Randazzo</a>,
+              <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>,
+              <a class="name" href="https://eyvind.me/">Eyvind Niklasson</a>,
+              <a class="name" href="http://www.drmichaellevin.org/">Michael Levin</a>,
+              <a class="name" href="https://greydanus.github.io/about.html">Sam Greydanus</a>
+            </p>
+            <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
+              <a class="affiliation" href="https://research.google/">Google</a>,
+              <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>,
+              <a class="affiliation" href="http://mlcollective.org/">Oregon State University and the ML Collective</a>
+            </p>
+          </div>
+        </header>
+        <p class="summary">
+          This work presents a follow up to Growing Neural CAs, using a similar computational model for the goal of
+          digit "self-classification". The authors show how neural CAs can self-classify the MNIST digit they form. The
+          resulting CAs can be interacted with by dynamically changing the underlying digit. The CAs respond to
+          perturbations with a learned self-correcting classification behaviour.
+          <a class="continue" href="/2020/selforg/mnist/">
+            Read Full Article
+          </a>
         </p>
-    
-        <p>
-          If you would like get involved but don't know where to start, small
-          projects may be available if you ask in the channel.
-        </p>
-    
-        <h2>About the Thread Format</h2>
-    
-        <p>
-          Part of Distill's mandate is to experiment with new forms of scientific
-          publishing. We believe that that reconciling faster and more continuous
-          approaches to publication with review and discussion is an important open
-          problem in scientific publishing.
-        </p>
-        <p>
-          Threads are collections of short articles, experiments, and critical
-          commentary around a narrow or unusual research topic, along with a slack
-          channel for real time discussion and collaboration. They are intended to
-          be earlier stage than a full Distill paper, and allow for more fluid
-          publishing, feedback and discussion. We also hope they'll allow for wider
-          participation. Think of a cross between a Twitter thread, an academic
-          workshop, and a book of collected essays.
-        </p>
-        <p>
-          Threads are very much an experiment. We think it's possible they're a
-          great format, and also possible they're terrible. We plan to trial two
-          such threads and then re-evaluate our thought on the format.
-        </p>
+      </article>
 
-    </d-article>
 
-    <d-appendix>
+      <article id="article-3">
+        <div class=icon></div>
+        <header>
+          <h3>
+            <a href="/selforg/2021/textures/">Self-Organising Textures</a>
+          </h3>
+          <div class="authors-affiliations grid">
+            <h3>Authors</h3>
+            <h3>Affiliations</h3>
+            <p class="author" style="line-height: 1.5; margin-top: 4px;">
+              <a class="name" href="https://eyvind.me/">Eyvind Niklasson</a>,
+              <a class="name" href="https://znah.net/">Alexander Mordvintsev</a>,
+              <a class="name" href="">Ettore Randazzo</a>,
+              <a class="name" href="http://www.drmichaellevin.org/">Michael Levin</a>
+            </p>
+            <p class="affiliation" style="line-height: 1.5; margin-top: 4px;">
+              <a class="affiliation" href="https://research.google/">Google</a>,
+              <a class="affiliation" href="https://allencenter.tufts.edu/">Allen Discovery Center</a>,
+            </p>
+          </div>
+        </header>
+        <p class="summary">
+          Here the authors apply Neural Cellular Automata to a new domain: texture synthesis. They begin by training NCA
+          to mimic a series of textures taken from template images. Then, taking inspiration from adversarial
+          camouflages which appear in nature, they use NCA to create textures which maximally excite neurons in a
+          pretrained vision model. These results reveal that a simple model combined with well-known objectives can lead
+          to robust and unexpected behaviors.
+          <a class="continue" href="/selforg/2021/textures/">
+            Read Full Article
+          </a>
+        </p>
+      </article>
 
-      <h3>Editorial Note</h3>
+    </div>
+
+    <div class="info">
+      <h4>This is a living document</h4>
       <p>
-          Part of Distill's mandate is to experiment with new forms of scientific publishing.
-          We believe something along the lines of this "thread" format might be promising,
-          but see it very much as an experiment.
-          We plan to trial two such threads and then re-evaluate our thought on the format.
+        Expect more articles on this topic, along with critical comments from
+        experts.
       </p>
-
-        <h3>Citation Information</h3>
-        <p>
-            If you wish to cite this thread as a whole, citation information can be found below.
-            The author order is all participants in the thread in alphabetical order.
-            Since this is a living document, the citation may add additional authors as it evolves.
-            You can also cite individual articles using the citation information provided at the
-            bottom of the corresponding article.
-        </p>
+    </div>
 
 
+    <h2>Get Involved</h2>
+
+    <p>
+      The Self-Organizing systems thread is open to articles exploring differentiable self-organizing sytems.
+      Critical
+      commentary and discussion of existing articles is also welcome. The thread
+      is organized through the open <code>#selforg</code> channel on the
+      <a href="http://slack.distill.pub">Distill slack</a>. Articles can be
+      suggested there, and will be included at the discretion of previous
+      authors in the thread, or in the case of disagreement by an uninvolved
+      editor.
+    </p>
+
+    <p>
+      If you would like get involved but don't know where to start, small
+      projects may be available if you ask in the channel.
+    </p>
+
+    <h2>About the Thread Format</h2>
+
+    <p>
+      Part of Distill's mandate is to experiment with new forms of scientific
+      publishing. We believe that that reconciling faster and more continuous
+      approaches to publication with review and discussion is an important open
+      problem in scientific publishing.
+    </p>
+    <p>
+      Threads are collections of short articles, experiments, and critical
+      commentary around a narrow or unusual research topic, along with a slack
+      channel for real time discussion and collaboration. They are intended to
+      be earlier stage than a full Distill paper, and allow for more fluid
+      publishing, feedback and discussion. We also hope they'll allow for wider
+      participation. Think of a cross between a Twitter thread, an academic
+      workshop, and a book of collected essays.
+    </p>
+    <p>
+      Threads are very much an experiment. We think it's possible they're a
+      great format, and also possible they're terrible. We plan to trial two
+      such threads and then re-evaluate our thought on the format.
+    </p>
+
+  </d-article>
+
+  <d-appendix>
+
+    <h3>Editorial Note</h3>
+    <p>
+      Part of Distill's mandate is to experiment with new forms of scientific publishing.
+      We believe something along the lines of this "thread" format might be promising,
+      but see it very much as an experiment.
+      We plan to trial two such threads and then re-evaluate our thought on the format.
+    </p>
+
+    <h3>Citation Information</h3>
+    <p>
+      If you wish to cite this thread as a whole, citation information can be found below.
+      The author order is all participants in the thread in alphabetical order.
+      Since this is a living document, the citation may add additional authors as it evolves.
+      You can also cite individual articles using the citation information provided at the
+      bottom of the corresponding article.
+    </p>
 
 
 
 
-        <d-footnote-list></d-footnote-list>
-        <d-citation-list></d-citation-list>
-    </d-appendix>
 
-    <d-bibliography src="bibliography.bib"></d-bibliography>
+
+    <d-footnote-list></d-footnote-list>
+    <d-citation-list></d-citation-list>
+  </d-appendix>
+
+  <d-bibliography src="bibliography.bib"></d-bibliography>
 
 <script type="text/javascript" src="index.bundle.js"></script></body>
